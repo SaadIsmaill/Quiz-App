@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App Enrollment</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="../mainstyle.css">
+</head>
+<body>
+  <div class="enrollment-container">
+    <h2>Enroll in the Quiz App</h2>
+    <form id="enrollmentForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="rollNumber">Roll Number</label>
+      <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your roll number" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+      <button type="submit">Enroll</button>
+    </form>
+  </div>
+  <script src="enrollment.js"></script>
+</body>
+</html>

@@ -46,7 +46,7 @@ const quizContainer = document.getElementById('quizContainer');
 const restartButton = document.getElementById('restartButton');
 
 // Initialize Timer
-let timeLeft = 120;
+let timeLeft = 350;
 
 function startTimer() {
     timerInterval = setInterval(() => {
@@ -62,16 +62,6 @@ function startTimer() {
     }, 1000);
 }
 
-// // Event listener for theme toggle
-// let darkTheme = false
-// const themeToggle = document.getElementById("themeToggle");
-// const themeIcon = document.getElementById("themeIcon");
-
-
-// themeToggle.addEventListener("click", () => {
-//     document.body.classList.toggle("dark");
-//     themeIcon.textContent = document.body.classList.contains("dark") ? "🌜" : "🌞";
-// });
 
 function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
@@ -122,6 +112,9 @@ restartButton.addEventListener("click", () => {
     startTimer();
 });
 
+
+
 // Start the quiz
+
 showQuestion();
 startTimer();
