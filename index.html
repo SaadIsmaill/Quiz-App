@@ -5,54 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="mainstyle.css">
+   
 </head>
 <body class="bg-white text-gray-800">
     <!-- Navbar -->
     <nav class="bg-white shadow-lg fixed top-0 w-full z-10">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-2xl font-bold text-purple-600">Quiz App</div>
+            <a href=""><div class="text-2xl font-bold text-purple-600">Quiz App</div></a>
             <button class="px-4 py-2 border border-purple-600 text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition-all">
-                Login
+                Enroll now
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-20 bg-gray-50 min-h-screen flex items-center">
-        <div class="container mx-auto px-4 flex flex-wrap items-center">
-            <!-- Text Content -->
-            <div class="w-full md:w-1/2 mb-8 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-4">
-                    Online Quiz & <span class="text-purple-600">Check Your IQ!</span>
-                </h1>
-                <p class="text-lg text-gray-600 mb-6">
-                    Win up to <strong>1000৳</strong> monthly from Quiz Baj. Challenge yourself and become the top scorer today!
-                </p>
-                <form class="flex flex-col md:flex-row items-center">
-                    <input type="text" placeholder="+880" class="w-full md:w-1/3 px-4 py-2 border border-gray-300 rounded-lg mb-4 md:mb-0 md:mr-4 focus:outline-none focus:ring-2 focus:ring-purple-500" required>
-                    <button type="submit" class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">
-                        Get Started
-                    </button>
-                </form>
-                <p class="text-sm text-gray-600 mt-4">NUMBER OF ACTIVE USERS RIGHT NOW <span class="text-purple-600 font-bold">20,000+</span></p>
-            </div>
-            <!-- Illustration -->
-            <div class="w-full md:w-1/2">
-                <img src="quiz-illustration.png" alt="Quiz Illustration" class="w-full">
-            </div>
-        </div>
-    </section>
+    <div
+    class="items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5"
+    data-aos="fade-right" data-aos-duration="800">
+    <div class="pr-2 md:mb-14 py-14 md:py-0 animate_animated animate_backInLeft">
+      <h1 class="text-3xl font-semibold text-purple-950 lg:text-4xl">
+        Welcome to Quiz App, your go-to platform for fun, interactive, and challenging quizzes!
+      </h1>
+      <p class="py-4 text-lg text-gray-300 2xl:py-8 md:py-6 2xl:pr-5">
+        Boost your knowledge, challenge your mind, and have fun all at once! Our quiz app is designed to be engaging, easy to use, and packed with features to keep you coming back.
 
-    <!-- Footer -->
-    <footer class="bg-white border-t">
-        <div class="container mx-auto px-4 py-6 text-center text-gray-600">
-            © 2024 Quiz App. All rights reserved by Saad Ismail.
-        </div>
-    </footer>
+Take the first step to becoming a trivia champion. Join thousands of players already loving Quiz App!
+      </p>
+      <div class="mt-4">
+        <a href="./quiz-dashboard/index.html"
+          class="px-5 py-3 text-lg tracking-wider text-white bg-[#8A05E3] rounded-lg md:px-8 hover:bg-purple-800 group"><span>Get
+            Started</span> </a>
+      </div>
+    </div>
+
+    <div class="pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0 animate_animated animate_backInRight">
+      <img id="heroImg1"
+        class="transition-all duration-300 ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0"
+        src="img/—Pngtree—quiz time bubble speech banner_9147207.png" alt="Awesome hero page image"
+        width="500" height="488" />
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
