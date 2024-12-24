@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="mainstyle.css">
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+<body class="bg-white text-gray-800 dark:bg-white dark:text-gray-200">
     <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-800 shadow-lg fixed top-0 w-full z-10">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -21,6 +21,7 @@
         </div>
     </nav>
 
+    
     <!-- Quiz Section -->
     <div class="container mx-auto px-4 py-20">
         <div class="flex justify-between items-center mb-6">
@@ -33,9 +34,9 @@
             <div id="answers" class="mt-4 grid grid-cols-1 gap-4"></div>
 
             <button id="nextButton" 
-                class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all hidden">
-                Next Question
-            </button>
+            class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all hidden block mx-auto">
+            Next Question
+    </button>
         </div>
     </div>
 
@@ -44,9 +45,9 @@
         <h2 class="text-2xl font-bold text-center">Your Results</h2>
         <p id="score" class="mt-4 text-center text-lg font-medium"></p>
         <button id="restartButton" 
-            class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all">
-            Restart Quiz
-        </button>
+        class="mt-6 block mx-auto px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all">
+        Restart Quiz
+</button>
     </div>
 
 <script src="quiz.js"></script>

@@ -6,30 +6,7 @@
     { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Rome"], answer: 2 },
     { question: "What is the boiling point of water?", options: ["90°C", "100°C", "80°C", "70°C"], answer: 1 },
     { question: "Who wrote 'Hamlet'?", options: ["Charles Dickens", "William Shakespeare", "Mark Twain", "J.K. Rowling"], answer: 1 },
-    { question: "Which is the largest ocean on Earth?", options: ["Atlantic", "Pacific", "Indian", "Arctic"], answer: 1 },
-    { question: "What is the square root of 16?", options: ["2", "3", "4", "5"], answer: 2 },
-    { question: "What is the capital of Japan?", options: ["Seoul", "Tokyo", "Beijing", "Bangkok"], answer: 1 },
-    { question: "What is the smallest prime number?", options: ["0", "1", "2", "3"], answer: 2 },
-    { question: "What is the chemical symbol for gold?", options: ["Au", "Ag", "Fe", "Hg"], answer: 0 },
-    { question: "Who painted the Mona Lisa?", options: ["Vincent Van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"], answer: 2 },
-    { question: "Which gas do plants use for photosynthesis?", options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"], answer: 2 },
-    { question: "Which planet is closest to the sun?", options: ["Mercury", "Venus", "Earth", "Mars"], answer: 0 },
-    { question: "Who developed the theory of relativity?", options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"], answer: 1 },
-    { question: "Which is the longest river in the world?", options: ["Amazon", "Nile", "Yangtze", "Mississippi"], answer: 1 },
-    { question: "What is the hardest natural substance?", options: ["Gold", "Iron", "Diamond", "Platinum"], answer: 2 },
-    { question: "Which element has the atomic number 1?", options: ["Oxygen", "Hydrogen", "Carbon", "Nitrogen"], answer: 1 },
-    { question: "What is the capital of Italy?", options: ["Milan", "Venice", "Rome", "Naples"], answer: 2 },
-    { question: "What is the speed of light?", options: ["299,792 km/s", "300,000 km/s", "150,000 km/s", "250,000 km/s"], answer: 0 },
-    { question: "What is the largest mammal?", options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"], answer: 1 },
-    { question: "What is the freezing point of water?", options: ["0°C", "10°C", "-10°C", "100°C"], answer: 0 },
-    { question: "Who invented the telephone?", options: ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"], answer: 0 },
-    { question: "Which continent has the most countries?", options: ["Asia", "Africa", "Europe", "South America"], answer: 1 },
-    { question: "Which is the smallest planet in the solar system?", options: ["Mercury", "Mars", "Earth", "Venus"], answer: 0 },
-    { question: "What is the capital of Canada?", options: ["Toronto", "Ottawa", "Vancouver", "Montreal"], answer: 1 },
-    { question: "What is the largest desert in the world?", options: ["Sahara", "Gobi", "Antarctica", "Kalahari"], answer: 2 },
-    { question: "What is the national flower of Japan?", options: ["Cherry Blossom", "Rose", "Lotus", "Tulip"], answer: 0 },
-    { question: "Who discovered penicillin?", options: ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"], answer: 1 },
-    { question: "Which is the tallest mountain in the world?", options: ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"], answer: 0 }
+    
 ];
 
 let currentQuestionIndex = 0;
@@ -46,7 +23,7 @@ const quizContainer = document.getElementById('quizContainer');
 const restartButton = document.getElementById('restartButton');
 
 // Initialize Timer
-let timeLeft = 350;
+let timeLeft = 60;
 
 function startTimer() {
     timerInterval = setInterval(() => {
