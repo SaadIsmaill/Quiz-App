@@ -48,7 +48,7 @@ function showQuestion() {
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement("button");
         button.textContent = option;
-        button.className = "px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition-all";
+        button.className = "px-4 py-2 bg-gray-200  rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition-all";
         button.addEventListener("click", () => selectAnswer(index));
         answersEl.appendChild(button);
     });
