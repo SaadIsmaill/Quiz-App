@@ -52,3 +52,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     window.location.href = '../quiz-dashboard/index.html';
   });
 });
+
+
+
+
+
+

@@ -8,32 +8,32 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="../quiz-enrollmentform/enroll.css">
 </head>
-<body>
-  <div class="p-10">
-    <h1 class="mb-8 font-extrabold text-4xl">Registration Form For Quiz App!</h1>
+<body class="bg-gray-50">
+  <div class="p-10 max-w-4xl mx-auto"> <!-- Increased max width -->
+    <h1 class="mb-8 font-extrabold text-4xl text-center text-purple-600">Registration Form For Quiz App!</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <form id="registrationForm">
+      <form id="registrationForm" class="bg-white p-8 rounded-lg shadow-md">
         <div>
-          <label class="block font-semibold" for="name">Name</label>
-          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1" id="name" type="text" name="name" required="required" autofocus="autofocus">
+          <label class="block font-semibold text-gray-700" for="name">Name</label>
+          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-gray-400 text-xl p-4 border border-gray-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-500" id="name" type="text" name="name" required="required" autofocus="autofocus">
         </div>
         <div class="mt-4">
-          <label class="block font-semibold" for="email">Email</label>
-          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1" id="email" type="email" name="email" required="required">
+          <label class="block font-semibold text-gray-700" for="email">Email</label>
+          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-gray-400 text-xl p-4 border border-gray-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-500" id="email" type="email" name="email" required="required">
         </div>
         <div class="mt-4">
-          <label class="block font-semibold" for="password">Password</label>
-          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1" id="password" type="password" name="password" maxlength="8" required="required" autocomplete="new-password">
+          <label class="block font-semibold text-gray-700" for="password">Password</label>
+          <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-gray-400 text-xl p-4 border border-gray-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-500" id="password" type="password" name="password" maxlength="8" required="required" autocomplete="new-password">
         </div>
         <div class="flex items-center justify-between mt-8">
-          <button type="submit" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 md:py-4 md:text-lg md:px-10">Register</button>
-          <!-- <a class="font-semibold" href="#">Already registered?</a> -->
+          <button type="submit" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-200">Register</button>
+          <!-- <a class="font-semibold text-purple-600 hover:text-purple-500" href="#">Already registered?</a> -->
         </div>
       </form>
       <aside>
-        <div class="bg-gray-100 p-8 rounded">
-          <h2 class="font-bold text-2xl">Instructions</h2>
-          <ul class="list-disc mt-4 list-inside">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-md h-full"> <!-- Added h-full for equal height -->
+          <h2 class="font-bold text-2xl text-gray-800">Instructions</h2>
+          <ul class="list-disc mt-4 list-inside text-gray-700">
             <li>All users must provide a valid email address and password to create an account.</li>
             <li>Users must not use offensive, vulgar, or otherwise inappropriate language in their username or profile information.</li>
             <li>Users must not create multiple accounts for the same person.</li>

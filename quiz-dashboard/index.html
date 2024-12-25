@@ -5,51 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
-<body class="bg-white  dark:bg-white text-black">
+<body class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white">
     <!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed top-0 w-full z-10">
+    <nav class="bg-white dark:bg-gray-900 shadow-lg fixed top-0 w-full z-10">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#">
                 <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">Quiz App</div>
             </a>
-            <a href="../index.html"><button id="logoutButton" 
-                class="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition-all">
-                Logout
-            </button></a>
+            <a href="../index.html">
+                <button id="logoutButton" 
+                    class="px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-500 transition-all">
+                    Logout
+                </button>
+            </a>
         </div>
     </nav>
-
-    
     <!-- Quiz Section -->
-    <div class="container mx-auto px-4 py-20">
+    <div class="container mx-auto px-4 py-24 mt-16">
         <div class="flex justify-between items-center mb-6">
-            <h1 class="text-2xl font-bold">Quiz Time</h1>
-            <div class="text-lg font-semibold">Time Left: <span id="timer">02:00</span></div>
+            <h1 class="text-3xl font-bold text-purple-600 text-center">Quiz Time</h1>
+            <div class="text-lg font-semibold">Time Left: <span id="timer" class="text-black">02:00</span></div>
         </div>
-        
-        <div id="quizContainer" class="bg-gray-100  p-6 rounded-lg shadow-md">
-            <div id="question" class="text-lg font-medium"></div>
+        <div id="quizContainer" class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+            <div id="question" class="text-xl font-medium text-gray-800 dark:text-gray-200"></div>
             <div id="answers" class="mt-4 grid grid-cols-1 gap-4"></div>
-
             <button id="nextButton" 
-            class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all hidden block mx-auto">
-            Next Question
-    </button>
+                class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all hidden block mx-auto">
+                Next Question
+            </button>
         </div>
     </div>
-
     <!-- Results Section -->
-    <div id="results" class="container mx-auto px-4 py-20 hidden">
-        <h2 class="text-2xl font-bold text-center">Your Results</h2>
+    <div id="results" class="container mx-auto px-4 py-24 mt-16 hidden">
+        <h2 class="text-3xl font-bold text-center text-purple-600">Your Results</h2>
         <p id="score" class="mt-4 text-center text-lg font-medium"></p>
         <button id="restartButton" 
-        class="mt-6 block mx-auto px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all">
-        Restart Quiz
-</button>
+            class="mt-6 block mx-auto px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all">
+            Restart Quiz
+        </button>
     </div>
-
-<script src="quiz.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
