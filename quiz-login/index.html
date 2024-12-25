@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-login-page</title>
+    <link rel="stylesheet" href="quizlogin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Include SweetAlert2 -->
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <div class="xl:w-[700px] px-10 h-[400px] rounded-3xl xl:shadow-xl">
+          <h1 class="text-center text-3xl font-bold mt-2 mb-2">Login</h1>
+          <hr>
+          <div class="flex justify-center mt-10">
+            <form id="loginForm">
+              <input type="text" id="email" class="py-3 p-5 rounded-md bg-zinc-50 md:w-[500px] w-[300px] outline-indigo-400" placeholder="Enter your email" required>
+              <br><br>
+              <input type="password" id="password" class="py-3 p-5 rounded-md bg-zinc-50 md:w-[500px] w-[300px] outline-indigo-400" placeholder="Enter your password" required>
+              <div class="flex justify-end mt-3 mb-4">
+                <!-- <a href="#" class="text-blue-700">Forgot password</a> -->
+              </div>
+              <button type="submit" class="py-3 bg-purple-800 text-white w-full rounded-md font-bold">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+<script src="quizlogin.js"></script>
+</body>
+</html>

@@ -49,7 +49,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     text: `Welcome, ${name}! You can now take your quiz.`,
   }).then(() => {
     // Redirect to the quiz dashboard after the alert is confirmed
-    window.location.href = '../quiz-dashboard/index.html';
+    window.location.href = '../quiz-login/index.html';
   });
 });
 
