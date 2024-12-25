@@ -7,12 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="dashboard.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white">
+<body class="bg-gray-100 text-black">
     <!-- Navbar -->
-    <nav class="bg-white dark:bg-gray-900 shadow-lg fixed top-0 w-full z-10">
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-10">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#">
-                <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">Quiz App</div>
+                <div class="text-2xl font-bold text-purple-600">Quiz App</div>
             </a>
             <a href="../index.html">
                 <button id="logoutButton" 
@@ -28,8 +28,8 @@
             <h1 class="text-3xl font-bold text-purple-600 text-center">Quiz Time</h1>
             <div class="text-lg font-semibold">Time Left: <span id="timer" class="text-black">02:00</span></div>
         </div>
-        <div id="quizContainer" class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-            <div id="question" class="text-xl font-medium text-gray-800 dark:text-gray-200"></div>
+        <div id="quizContainer" class="bg-white p-6 rounded-lg shadow-md">
+            <div id="question" class="text-xl font-medium text-gray-800"></div>
             <div id="answers" class="mt-4 grid grid-cols-1 gap-4"></div>
             <button id="nextButton" 
                 class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all hidden block mx-auto">
